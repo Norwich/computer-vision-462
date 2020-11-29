@@ -33,7 +33,7 @@ Deep convolutional neural networks perform well on Computer Vision tasks, althou
 ### Transfer Learning
 Training numerous CNN hyper-parameters requires a lot of labeled training data and computing power. Therefore, using transfer learning technique allows us to take a pre-trained network to extract features, and train a new layer on top for the research task of classifying brain tumor images. The model is built with a TensorFlow-Hub image feature vector module followed by a linear classifier.
 
-Approach | Training Accracy | Validation Accuracy | Testing Accuracy
+Approach | Training Accuracy | Validation Accuracy | Testing Accuracy
 ------------ | ------------- | ------------- | -------------
 Create ML Baseline | 1 | 0.94 | 0.78
 Create ML Data augmentation| 0.82 | 0.67 | 0.75
