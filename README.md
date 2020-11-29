@@ -11,7 +11,7 @@ A brain tumor is an abnormal mass of tissue in which cells grow and multiply unc
 The brain tumor dataset is retrieved from [Kaggle, Brain MRI Images for Brain Tumor Detection](https://www.kaggle.com/jjprotube/brain-mri-images-for-brain-tumor-detection). There are 98 images without any sign of a tumor, and 155 files with various tumors.
 
 ## Data Preparation
-Images took on different file formatting (e.g..jpg, .png, .jpeg) and required consistent input file extension (e.g. jpeg). The B&W images of 224 x 224 pixels represented in two classes: the images containing tumor labeled with ‘yes’, and the images that do not are marked with ‘no’. The dataset was split into three categories: training (62%), validation (8%) and testing (30%) images.
+Images took on different file formatting (e.g..jpg, .png, .jpeg) and required consistent input file extension (e.g. jpeg). The B&W images of 224 x 224 pixels represented in two classes: the images containing tumor labeled with *yes*, and the images that do not - are marked with *no*. The dataset was split into three categories: training (62%), validation (8%) and testing (30%) images.
 
 
 No Tumor Brain          |  Brain Tumor Anatomy
@@ -19,10 +19,8 @@ No Tumor Brain          |  Brain Tumor Anatomy
 <img src="https://storage.googleapis.com/kagglesdsdata/datasets/740566/1633128/no/no1005.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=databundle-worker-v2%40kaggle-161607.iam.gserviceaccount.com%2F20201128%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20201128T163110Z&X-Goog-Expires=172799&X-Goog-SignedHeaders=host&X-Goog-Signature=4674efe50025070bd9f90cfa2e5cf22ca84baa24e879d43fbc8f6e051ad7527a2577bd16f3a8dfbc7b9c15608827d795e1f6d77b6ef8dd6a67edcc0cdb585cc9292edcdd3bbeb0d3e015c1c446d4fa084adbba70bc09eeed625153f31408549e0467c0f178200d5f42e1d87f8f71312e5060c61a3572a64166c5648864aff91554ccd5a8423ecbd344956ea7ccb2bb306fc9aa76b583d8cead2a7d0c4bd5a285e2f3faef391db419b408161f7bcbbbbaec447083cbd899ec95173e6084bb6e981cd3f803b544d546d791ef2337576f91018f1f5dec21ce65bffa8332912d02aa602e9c7750594897e02788610dc91cb72d0e01296203decb607ae3456729e9bf" alt="No Tumor Brain" width="224" height="224"/> | <img src="https://lh3.googleusercontent.com/proxy/Cj5KVLSSp7dqz9oe1Wjx4lXviNT3gSCCCEyoJRb0Ckhftlr6XrXSxIy7-VX977EnZYF5453GAnae1iFA9b3uPAfyB-FEDGVUS_giBEod" alt="Tumor Evaluation" width="300" height="180" />
 
 
-
-
 ## Model Architecture
-The research project employes [the Vision and the Core ML frameworks](https://developer.apple.com/machine-learning/core-ml/) to preprocess and classify fMRI data. The framework of Core ML is optimized for on-device performance for a variety of algorithms, it leverages Apple hardware, minimizes memory footprint and power consumption. The research projects trains a brain tumor classifier using Create ML in Swift environment and applies the resulting model to real-time fMRI image classification using Vision.
+The research project employes [the Vision and the Core ML frameworks](https://developer.apple.com/machine-learning/core-ml/) to preprocess and classify fMRI data. The framework of Core ML is optimized for on-device performance for a variety of algorithms, it leverages Apple hardware, minimizes memory footprint and power consumption. The research project trains a brain tumor classifier using Create ML in Swift environment and applies the resulting model to real-time fMRI image classification using Vision.
 
 ## Experimentation
 
